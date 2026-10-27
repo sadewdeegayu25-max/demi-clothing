@@ -1,0 +1,437 @@
+
+/* LUNÉA website eke default spacing reset karanawa */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Website eke main body design eka........................ */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF9F5;
+    color: #222222;
+}
+/* Header design.............................. */
+header {
+    background-color: #FFF7FA;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid  #F3DCE4;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Brand name design........................ */
+header h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #222222;
+}
+
+/* Navigation menu layout............................ */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+/* Navigation links design.................................. */
+nav a {
+    text-decoration: none;
+    color:  #3D3035;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+/* Mouse eka link ekata geniyama color change wenawa............................. */
+nav a:hover {
+    color: #C78391;
+}
+
+/* Main hero section design................................. */
+
+#home {
+    min-height: 450px;
+    padding: 70px 8%;
+    background-color: #FCEEF2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 520px;
+}
+
+.hero-label {
+    color: #D47793;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+#home h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 52px;
+    line-height: 1.15;
+    color: #3D3035;
+    margin-bottom: 20px;
+}
+
+#home .hero-description {
+    font-size: 17px;
+    color: #695B61;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #D47793;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #B85F7B;
+    transform: translateY(-2px);
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 650px;
+     width: 100%;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+
+/* Shop section design.............................. */
+#shop {
+    padding: 70px 8%;
+    background-color: #FFF9F5;
+    text-align: center;
+}
+
+/* Shop heading design................................ */
+#shop h2 {
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    color: #3D3035;
+    margin-bottom: 12px;
+}
+/* Individual product card design......................... */
+.product {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    min-height: 180px;
+    margin: 1%;
+    padding: 30px 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #F0E4DF;
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Product card hover effect.................................. */
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Product name.........................................*/
+.product h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #222222;
+}
+
+.product p {              /* Product description */
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+.product p:last-child {       /* Product price*/
+    color: #A45F70;
+    font-weight: bold;
+}
+
+
+/* About section design............................ */
+#about {
+    padding: 70px 8%;
+    background-color: #F8E8E8;
+    text-align: center;
+}
+
+#about h2 {          /* About heading*/
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #222222;
+}
+
+/* About paragraph text........................ */
+#about p {
+    max-width: 700px;
+    margin: 0 auto 15px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555555;
+}
+
+/* Contact section design........................... */
+#contact {
+    padding: 70px 8%;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+/* Contact heading.................. */
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+#contact p {                   /* Contact paragraph text*/
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555555;
+}
+
+#contact a {                       /* Contact links*/
+    color: #A45F70;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {              /* Contact link hover effect*/
+    text-decoration: underline;
+}
+
+
+/* Footer design...................... */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 30px;
+}
+
+
+footer h3 {           /* Footer brand name */
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+footer p {                  /* Footer text */
+    font-size: 14px;
+    line-height: 1.8;
+    color: #E8E0DD;
+    margin-bottom: 8px;
+}
+
+/* Mobile responsive design........................................ */
+@media (max-width: 768px) {
+
+    
+    header {        /* Header layout on mobile */
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 5%;
+    }
+
+     nav {              /* Navigation menu on mobile */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #home h2 {             /* Hero heading on mobile */
+        font-size: 34px;
+    }
+
+   
+    #home {                      /* Hero section spacing on mobile */
+        min-height: 350px;
+        padding: 70px 6%;
+    }
+
+    
+    .product {           /* Product cards on mobile */
+        width: 100%;
+        margin: 10px 0;
+    }
+
+   
+    #shop,            /* Section spacing on mobile */
+    #about,
+    #contact {
+        padding: 50px 6%;
+    }
+    
+#home {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+#home h2 {
+    font-size: 36px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 100%;
+}
+
+.hero-image img {
+    height: 300px;
+}
+
+}
+
+
+/* Product image design............................... */
+/* Product image size */
+
+.product-image {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    background-color: #FFF7FA;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.03);
+}
+
+
+
+/* Product card design .............................*/
+
+.product-card {
+    background-color: #FFFFFF;
+    padding: 22px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid #F8E4EB;
+    box-shadow: 0 5px 18px rgba(180, 100, 130, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(180, 100, 130, 0.16);
+}
+
+.product-card h3 {
+    color: #3D3035;
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+.product-card p {
+    color: #C45F83;
+    font-weight: 600;
+}
+
+
+/* Arrange products in a grid............................... */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {             /* Tablet and mobile screen layout */
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Add to Cart button design.............................. */
+
+.add-to-cart {
+    background-color: #D47793;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #B85F7B;
+    transform: translateY(-2px);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #1da851;
+}
+
+
+
+
+
+
